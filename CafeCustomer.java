@@ -15,3 +15,32 @@ public class CafeCustomer {
 	public String getFullData() {
 		return customerId + " - " + firstName + " " + lastName + " (" + email + ")";
     }
+
+	@Override
+	public String toString() {
+		return "CafeCustomer{" +
+                "customerId=" + customerId +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
+
+	@Override
+	public boolean equals(Object obj) {
+
+        if (this == obj) {
+            return true;
+        }
+
+        if (!(obj instanceof CafeCustomer)) {
+            return false;
+        }
+
+        CafeCustomer other = (CafeCustomer) obj;
+
+        return customerId == other.customerId ||
+               email.equals(other.email);
+    }
+}
+
