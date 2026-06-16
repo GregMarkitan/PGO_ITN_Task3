@@ -11,3 +11,7 @@ public class CafeCustomer {
 		this.lastName = lastName;
 		this.email = email;
     }
+
+	public String getFullData() {
+		return customerId + " - " + firstName + " " + lastName + " (" + email + ")";
+    }
