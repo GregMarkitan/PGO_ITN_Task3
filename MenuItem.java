@@ -34,3 +34,30 @@ public class MenuItem {
 	public static int getProductCount() {
         return productCount;
 	}
+
+	@Override
+	public String toString() {
+	 return "MenuItem{" +
+		"code='" + code + '\'' +
+		", name='" + name + '\'' +
+		", price=" + price +
+		", category='" + category + '\'' +
+		'}';
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+
+	if (this == obj) {
+	return true;
+	}
+
+	if (!(obj instanceof MenuItem)) {
+	return false;
+        }
+
+	MenuItem other = (MenuItem) obj;
+	return code.equals(other.code);
+    }
+}
+
