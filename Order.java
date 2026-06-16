@@ -39,3 +39,26 @@ public class Order {
 	return nextOrderNumber;
 	}
 
+	@Override
+	public String toString() {
+		StringBuilder result = new StringBuilder();
+		result.append("Order #").append(orderNumber).append("\n");
+		result.append("Customer: ").append(customer.getFullData()).append("\n");
+	
+        result.append("Items:\n");
+
+        for (MenuItem item : items) {
+            result.append(" - ")
+                  .append(item.getName())
+                  .append(" (")
+                  .append(item.getPrice())
+                  .append(")\n");
+        }
+
+        result.append("Paid: ").append(paid);
+        result.append("\nTotal: ").append(calculateTotal());
+
+        return result.toString();
+    }
+}
+
