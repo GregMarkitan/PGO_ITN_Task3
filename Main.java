@@ -20,7 +20,13 @@ public class Main {
         MenuItem espressoCopy = new MenuItem("C-01", "Espresso duplicate", 9.0, "coffee");
         System.out.println("Are the products equal? " + m1.equals(espressoCopy));
 
+	CafeCustomer anotherCustomer = new CafeCustomer(100, "Julia", "Mazur", "another@mail.pl");
+	System.out.println("Are customers equal? " + customer.equals(anotherCustomer));
+
         order.markAsPaid();
-        System.out.println(order);
+
+        System.out.println();
+	System.out.println("After payment");
+	System.out.println(order);
     }
 }
