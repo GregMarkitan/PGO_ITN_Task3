@@ -14,3 +14,23 @@ public class MenuItem {
 
         productCount++;
     }
+
+ 	public String getCode() {
+        return code;
+	}
+
+    	public String getName() {
+        return name;
+	}
+
+	public double getPrice() {
+        return price;
+	}
+	
+	public String getCategory() {
+        return category;
+	}
+
+	public static int getProductCount() {
+        return productCount;
+	}
