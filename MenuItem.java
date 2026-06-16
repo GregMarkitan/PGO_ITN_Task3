@@ -1,1 +1,5 @@
-PGO_ITN_Task3
+private String code;
+private String name;
+private double price;
+private String category;
+private static int productCount;
