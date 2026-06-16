@@ -1,8 +1,8 @@
-\# Cafe Order Management System (Java OOP Exercise)
+# Cafe Order Management System (Java OOP Exercise)
 
 
 
-\## Overview
+## Overview
 
 
 
@@ -12,49 +12,49 @@ This is a simple console-based Java application for managing a small cafe system
 
 The system allows you to:
 
-\- Create menu items
+- Create menu items
 
-\- Register a customer
+- Register a customer
 
-\- Build an order with multiple items
+- Build an order with multiple items
 
-\- Calculate total order value
+- Calculate total order value
 
-\- Print readable summaries
+- Print readable summaries
 
-\- Compare objects using `equals()`
-
-
-
-\---
+- Compare objects using `equals()`
 
 
 
-\## Project Structure
+---
+
+
+
+## Project Structure
 
 
 
 src/
 
-\- Main.java
+- Main.java
 
-\- MenuItem.java
+- MenuItem.java
 
-\- CafeCustomer.java
+- CafeCustomer.java
 
-\- Order.java
-
-
-
-\---
+- Order.java
 
 
 
-\## Classes Description
+---
 
 
 
-\### MenuItem
+## Classes Description
+
+
+
+### MenuItem
 
 
 
@@ -62,37 +62,37 @@ Represents a product on the menu in the cafe.
 
 
 
-\*\*Fields:\*\*
+**Fields:**
 
-\- code
+- code
 
-\- name
+- name
 
-\- price
+- price
 
-\- category
+- category
 
-\- Static metod: productCount
-
-
-
-\*\*Features:\*\*
-
-\- Constructor initializes all fields
-
-\- Static method: `getProductCount()`
-
-\- Overrides `toString()`
-
-\- Overrides `equals()` (compares by `code`)
+- Static metod: productCount
 
 
 
-\---
+**Features:**
+
+- Constructor initializes all fields
+
+- Static method: `getProductCount()`
+
+- Overrides `toString()`
+
+- Overrides `equals()` (compares by `code`)
 
 
 
-\### CafeCustomer
+---
+
+
+
+### CafeCustomer
 
 
 
@@ -100,35 +100,35 @@ Represents a customer placing orders.
 
 
 
-\*\*Fields:\*\*
+**Fields:**
 
-\- customerId
+- customerId
 
-\- firstName
+- firstName
 
-\- lastName
+- lastName
 
-\- email
-
-
-
-\*\*Features:\*\*
-
-\- Constructor initializes all data
-
-\- Method: `getFullData()`
-
-\- Overrides `toString()`
-
-\- Overrides `equals()` (compares by `customerId` or `email`)
+- email
 
 
 
-\---
+**Features:**
+
+- Constructor initializes all data
+
+- Method: `getFullData()`
+
+- Overrides `toString()`
+
+- Overrides `equals()` (compares by `customerId` or `email`)
 
 
 
-\### Order
+---
+
+
+
+### Order
 
 
 
@@ -136,33 +136,33 @@ Represents a customer order containing multiple items.
 
 
 
-\*\*Fields:\*\*
+**Fields:**
 
-\- orderNumber
+- orderNumber
 
-\- customer (CafeCustomer)
+- customer (CafeCustomer)
 
-\- items (ArrayList<MenuItem>)
+- items (ArrayList<MenuItem>)
 
-\- paid
+- paid
 
-\- static nextOrderNumber
+- static nextOrderNumber
 
 
 
-\*\*Features:\*\*
+**Features:**
 
-\- Automatically generated order numbers
+- Automatically generated order numbers
 
-\- `addItem(MenuItem item)`
+- `addItem(MenuItem item)`
 
-\- `calculateTotal()`
+- `calculateTotal()`
 
-\- `countItems()`
+- `countItems()`
 
-\- `markAsPaid()`
+- `markAsPaid()`
 
-\- Overrides `toString()`
+- Overrides `toString()`
 
 
 
